@@ -28,6 +28,7 @@
     <ProjectReference Include="..\PropertyAPI.Application\PropertyAPI.Application.csproj" />
     <ProjectReference Include="..\PropertyAPI.Domain\PropertyAPI.Domain.csproj" />
     <ProjectReference Include="..\PropertyAPI.Infrastructure\PropertyAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\PropertyAPI.API\PropertyAPI.API.csproj" />
   </ItemGroup>
 
 </Project>
