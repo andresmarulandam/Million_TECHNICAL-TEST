@@ -1,0 +1,13 @@
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\bin\Debug\net8.0\PropertyAPI.Domain.deps.json
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\bin\Debug\net8.0\PropertyAPI.Domain.dll
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\bin\Debug\net8.0\PropertyAPI.Domain.pdb
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\PropertyAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\PropertyAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\PropertyAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\PropertyAPI.Domain.AssemblyInfo.cs
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\PropertyAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\PropertyAPI.Domain.sourcelink.json
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\PropertyAPI.Domain.dll
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\refint\PropertyAPI.Domain.dll
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\PropertyAPI.Domain.pdb
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Domain\obj\Debug\net8.0\ref\PropertyAPI.Domain.dll

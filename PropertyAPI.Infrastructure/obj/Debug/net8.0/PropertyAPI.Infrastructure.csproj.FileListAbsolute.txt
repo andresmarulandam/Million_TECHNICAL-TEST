@@ -1,0 +1,16 @@
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\bin\Debug\net8.0\PropertyAPI.Infrastructure.deps.json
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\bin\Debug\net8.0\PropertyAPI.Infrastructure.dll
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\bin\Debug\net8.0\PropertyAPI.Infrastructure.pdb
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\bin\Debug\net8.0\PropertyAPI.Domain.dll
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\bin\Debug\net8.0\PropertyAPI.Domain.pdb
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\PropertyAPI.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\PropertyAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\PropertyAPI.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\PropertyAPI.Infrastructure.AssemblyInfo.cs
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\PropertyAPI.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\PropertyAPI.Infrastructure.sourcelink.json
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\Property.80CFD59D.Up2Date
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\PropertyAPI.Infrastructure.dll
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\refint\PropertyAPI.Infrastructure.dll
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\PropertyAPI.Infrastructure.pdb
+C:\Users\marul\Documents\Million_Technical-test\PropertyAPI\PropertyAPI.Infrastructure\obj\Debug\net8.0\ref\PropertyAPI.Infrastructure.dll

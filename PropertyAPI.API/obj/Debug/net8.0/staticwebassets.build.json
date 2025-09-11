@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3wvfcVXPNS6BFClHDTPsRLv+6avHiWrVXYGNLWKhskc=",
+  "Source": "PropertyAPI.API",
+  "BasePath": "_content/PropertyAPI.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
