@@ -2,10 +2,13 @@ import { useState, useEffect } from 'react';
 import type { Property, PropertyFilter } from '../types/property';
 import { propertyService } from '../services/api';
 
-export const useProperties = (filter?: PropertyFilter) => {
+export const useProperties = (initialFilter?: PropertyFilter) => {
   const [properties, setProperties] = useState<Property[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [currentFilter, setCurrentFilter] = useState<PropertyFilter>(
+    initialFilter || {},
+  );
 
   useEffect(() => {
     const fetchProperties = async () => {
@@ -15,10 +18,11 @@ export const useProperties = (filter?: PropertyFilter) => {
 
         let data: Property[];
         if (
-          filter &&
-          (filter.name || filter.address || filter.minPrice || filter.maxPrice)
+          Object.values(currentFilter).some(
+            (value) => value !== undefined && value !== '',
+          )
         ) {
-          data = await propertyService.getPropertiesByFilter(filter);
+          data = await propertyService.getPropertiesByFilter(currentFilter);
         } else {
           data = await propertyService.getAllProperties();
         }
@@ -32,7 +36,11 @@ export const useProperties = (filter?: PropertyFilter) => {
     };
 
     fetchProperties();
-  }, [filter]);
+  }, [currentFilter]);
 
-  return { properties, loading, error };
+  const applyFilter = (filter: PropertyFilter) => {
+    setCurrentFilter(filter);
+  };
+
+  return { properties, loading, error, applyFilter };
 };

@@ -1,19 +1,25 @@
-import PropertyList from './components/PropertyList';
-import { useProperties } from './hooks/useProperties';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import PropertyDetails from './pages/PropertyDetails';
+import './App.css';
 
 function App() {
-  const { properties, loading, error } = useProperties();
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>🏠 Million Property App</h1>
-        <p>Gestión de propiedades inmobiliarias</p>
-      </header>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <h1>Million Luxury Properties</h1>
+          <p>Exclusive real estate portfolio</p>
+        </header>
 
-      <main>
-        <PropertyList properties={properties} loading={loading} error={error} />
-      </main>
-    </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/property/:id" element={<PropertyDetails />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 

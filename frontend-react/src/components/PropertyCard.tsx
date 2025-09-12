@@ -12,8 +12,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           alt={property.name}
           className="property-image"
           onError={(e) => {
-            (e.target as HTMLImageElement).src =
-              'https://via.placeholder.com/300x200/cccccc/969696?text=No+Image';
+            (e.target as HTMLImageElement).src = 'https://placehold.co/300x200';
           }}
         />
       )}

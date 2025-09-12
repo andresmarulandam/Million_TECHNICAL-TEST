@@ -1,0 +1,108 @@
+.property-filters {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.property-filters h3 {
+  margin: 0 0 2rem 0;
+  color: var(--charcoal);
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--charcoal);
+  font-size: 0.95rem;
+}
+
+.filter-group input {
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: var(--transition);
+  background: var(--cream);
+}
+
+.filter-group input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.filter-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  flex: 1;
+}
+
+.filter-btn.apply {
+  background: var(--gold);
+  color: var(--charcoal);
+}
+
+.filter-btn.apply:hover:not(:disabled) {
+  background: var(--dark-gold);
+  transform: translateY(-1px);
+}
+
+.filter-btn.apply:disabled {
+  background: var(--dark-gray);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.filter-btn.clear {
+  background: transparent;
+  color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
+}
+
+.filter-btn.clear:hover {
+  background: var(--dark-gray);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .property-filters {
+    padding: 1.5rem;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+}
