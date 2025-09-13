@@ -4,9 +4,9 @@
 
 .properties-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .loading,
@@ -42,4 +42,11 @@
 
 .empty {
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .properties-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
