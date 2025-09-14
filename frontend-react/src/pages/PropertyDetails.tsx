@@ -3,12 +3,14 @@ import { useParams, Link } from 'react-router-dom';
 import type { Property } from '../types/property';
 import { propertyService } from '../services/api';
 import './PropertyDetails.css';
+import { optimizeImage } from '../services/imageService';
 
 const PropertyDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [property, setProperty] = useState<Property | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [imageError, setImageError] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchProperty = async () => {
@@ -30,6 +32,9 @@ const PropertyDetails: React.FC = () => {
 
     fetchProperty();
   }, [id]);
+
+  const optimizedImage = optimizeImage(property?.imageUrl, 800, 500);
+  const fallbackImage = optimizeImage(undefined, 800, 500);
 
   if (loading) {
     return (
@@ -72,16 +77,11 @@ const PropertyDetails: React.FC = () => {
         <div className="property-image-section">
           <div className="property-image-container">
             <img
-              src={
-                property.imageUrl ||
-                'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop'
-              }
+              src={imageError ? fallbackImage : optimizedImage}
               alt={property.name}
               className="property-detail-image"
-              onError={(e) => {
-                (e.target as HTMLImageElement).src =
-                  'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop';
-              }}
+              onError={() => setImageError(true)}
+              loading="eager"
             />
           </div>
         </div>

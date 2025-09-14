@@ -1,5 +1,6 @@
 import type { Property } from '../types/property';
 import PropertyCard from './PropertyCard';
+import './PropertyList.css';
 
 interface PropertyListProps {
   properties: Property[];

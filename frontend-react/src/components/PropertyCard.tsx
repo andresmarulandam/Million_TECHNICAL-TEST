@@ -1,10 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 import type { Property } from '../types/property';
 import { useState } from 'react';
+import './PropertyCard.css';
+import { optimizeImage } from '../services/imageService';
 
 interface PropertyCardProps {
   property: Property;
 }
+
 const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   const navigate = useNavigate();
   const [imageError, setImageError] = useState(false);
@@ -17,22 +20,19 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
     setImageError(true);
   };
 
-  const placeholderImage =
-    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=250&fit=crop';
+  const optmizedImage = optimizeImage(property.imageUrl, 400, 250);
+  const fallbackImage = optimizeImage(undefined, 400, 250);
 
   return (
     <div className="property-card" onClick={handleClick}>
       <div className="property-image-container">
         <div className="property-overlay"></div>
         <img
-          src={
-            imageError
-              ? placeholderImage
-              : property.imageUrl || placeholderImage
-          }
+          src={imageError ? fallbackImage : optmizedImage}
           alt={property.name}
           className="property-image"
           onError={handleImageError}
+          loading="lazy"
         />
       </div>
 

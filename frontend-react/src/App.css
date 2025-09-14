@@ -110,6 +110,15 @@ main {
     padding: 1.5rem 0;
   }
 }
+
+@media (max-width: 376px) {
+  .App-header h1 {
+    font-size: 1.4rem;
+  }
+  .App-header {
+    justify-content: center;
+  }
+}
 /* Layout containers */
 .container {
   display: grid;
