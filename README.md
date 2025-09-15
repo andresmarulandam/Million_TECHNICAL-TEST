@@ -64,3 +64,82 @@ MongoDB (local o Atlas)
 Swagger UI: http://localhost:5019/swagger
 
 Health Check: http://localhost:5019/api/properties
+
+## 🚀 Frontend - React + TypeScript + Vite
+
+# 📋 Descripción
+
+Frontend desarrollado en React 18 con TypeScript para visualización de propiedades inmobiliarias. Implementa componentes modulares, hooks personalizados y testing con Jest.
+
+# 🏗️ Estructura del Frontend
+
+text
+frontend-react/
+├── src/
+│ ├── components/ # Componentes reutilizables
+│ │ ├── PropertyCard.tsx
+│ │ ├── PropertyFilters.tsx
+│ │ ├── PropertyList.tsx
+│ │ └── \*.css
+│ ├── pages/ # Páginas de la aplicación
+│ │ ├── HomePage.tsx
+│ │ └── PropertyDetails.tsx
+│ ├── hooks/ # Custom hooks
+│ │ └── useProperties.ts
+│ ├── services/ # Servicios API
+│ │ ├── api.ts
+│ │ └── imageService.ts
+│ ├── types/ # Definiciones TypeScript
+│ │ └── property.ts
+│ ├── **tests**/ # Tests unitarios
+│ └── App.tsx
+├── public/
+├── package.json
+└── vite.config.ts
+
+# 🛠️ Tecnologías Frontend
+
+- React 18 - Biblioteca principal
+- TypeScript - Tipado estático
+- Vite - Build tool y dev server
+- React Router - Navegación
+- Jest + Testing Library - Testing
+
+## 🔧 Instalación y Ejecución - Frontend
+
+1. Instalar dependencias
+   bash
+   cd frontend-react
+   npm install
+
+2. Ejecutar en desarrollo
+   bash
+   npm run dev
+   Aplicación: http://localhost:5173
+
+3. Ejecutar tests
+   bash
+   npm test
+
+# Funcionalidades Frontend
+
+✅ Completadas
+
+- Listado de propiedades con grid responsive
+- Sistema de filtros (nombre, dirección, rango de precios)
+- Detalles de propiedad con página individual
+- Routing con React Router
+- Manejo de estados con hooks personalizados
+- Error handling y loading states
+- Responsive design para móviles y desktop
+- Testing de servicios y hooks
+
+## Integración Completa
+
+El frontend se conecta automáticamente al backend en http://localhost:5019/api. Asegúrate de que ambos servicios estén ejecutándose:
+
+Iniciar Backend: dotnet run --project PropertyAPI.API/
+
+Iniciar Frontend: npm run dev
+
+Acceder: http://localhost:5173
