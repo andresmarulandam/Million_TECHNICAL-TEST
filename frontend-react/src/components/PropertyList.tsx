@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Property } from '../types/property';
 import PropertyCard from './PropertyCard';
 import './PropertyList.css';
@@ -46,4 +47,4 @@ const PropertyList: React.FC<PropertyListProps> = ({
     </div>
   );
 };
-export default PropertyList;
+export default React.memo(PropertyList);

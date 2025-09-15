@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import type { Property } from '../types/property';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './PropertyCard.css';
 import { optimizeImage } from '../services/imageService';
 
@@ -46,4 +46,4 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
     </div>
   );
 };
-export default PropertyCard;
+export default React.memo(PropertyCard);
